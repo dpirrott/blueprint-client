@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import { useCookies } from "react-cookie";
 import axios from "axios";
+// require("dotenv").config();
 
 if (process.env.REACT_APP_API_BASE_URL) {
   axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
