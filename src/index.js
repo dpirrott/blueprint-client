@@ -13,7 +13,6 @@ import axios from "axios";
 if (process.env.REACT_APP_API_BASE_URL) {
   axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
 }
-
 // 👇️ IMPORTANT: use correct ID of your root element
 // this is the ID of the div in your index.html file
 const rootElement = document.getElementById("root");

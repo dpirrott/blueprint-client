@@ -2,6 +2,10 @@ import { createContext, useState, useEffect } from "react";
 import { useCookies } from "react-cookie";
 import axios from "axios";
 
+if (process.env.REACT_APP_API_BASE_URL) {
+  axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
+}
+
 export const usersContext = createContext();
 
 export default function UsersProvider(props) {
